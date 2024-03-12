@@ -1,0 +1,8 @@
+README.md
+setup.py
+ytscribe/__init__.py
+ytscribe/transcribe.py
+ytscribe.egg-info/PKG-INFO
+ytscribe.egg-info/SOURCES.txt
+ytscribe.egg-info/dependency_links.txt
+ytscribe.egg-info/top_level.txt
