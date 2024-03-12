@@ -2,7 +2,6 @@ import pytube as pt
 import whisper
 import os
 import re
-import ssl
 
 def replace_special_chars(text):
     ''' 
