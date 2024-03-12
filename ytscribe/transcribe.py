@@ -5,6 +5,10 @@ import re
 import ssl
 
 def replace_special_chars(text):
+    ''' 
+    Replace special characters in strings with underscores
+    '''
+
     # Define the pattern to match special characters and spaces
     pattern = r'[^a-zA-Z0-9]+'
     # Replace the matched pattern with underscores
@@ -12,12 +16,12 @@ def replace_special_chars(text):
     return replaced_text
 
 
-ssl._create_default_https_context = ssl._create_unverified_context
-
-model = whisper.load_model('base')
-
-def download_video_and_transcribe(video_url, directory, output_filename = 'title'):
+def download_video_and_transcribe(video_url, directory, output_filename = 'title', whisper_model = 'base'):
     
+    '''
+    Temporarily downloads the youtube video as a .wav file, transcribes it using openai's whisper and deletes the video file
+    '''
+
     # create the directory
     os.makedirs(directory, exist_ok=True)
 
@@ -36,6 +40,8 @@ def download_video_and_transcribe(video_url, directory, output_filename = 'title
     stream.download(filename = directory + '/' + video_name + '.wav')
 
     # transcribe video
+    # load whisper model
+    model = whisper.load_model(whisper_model)
     result = model.transcribe(directory + '/' + video_name + '.wav')
 
     # Open a text file and write transcription in it
