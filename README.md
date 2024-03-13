@@ -1,4 +1,7 @@
 # ytscribe
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 A simple library that allows you to transcribe any single person YouTube video into a text file using OpenAI's Whisper module. 
 
 ## Setup
