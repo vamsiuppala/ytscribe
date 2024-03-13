@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1' 
+VERSION = '0.0.3'
 DESCRIPTION = 'Transcribe YouTube videos'
 LONG_DESCRIPTION = 'Package to transcribe YouTube videos by downloading them in a wav format and using OpenAI Whisper model'
 

@@ -1,3 +1,6 @@
 __pycache__/
 files/
 *.ipynb
+build/*
+dist/*
+ytscribe.egg-info/*
