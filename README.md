@@ -15,8 +15,8 @@ cd ytscribe
 ```
 pip install -r requirements.txt
 ```
-
-3. Install the library from pip
+### From PIP
+You can also install the library from pip
 ```
 pip install ytscribe
 ```
